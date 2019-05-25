@@ -1,6 +1,6 @@
 import React from "react";
 
-const Editor = ({ onTextChange }) => {
+const Editor = ({ onTextChange, initialMarkdown }) => {
   return (
     <div>
       Editor
@@ -11,6 +11,7 @@ const Editor = ({ onTextChange }) => {
           id="editor"
           rows="10"
           onChange={e => onTextChange(e)}
+          defaultValue={initialMarkdown}
         />
       </div>
     </div>
